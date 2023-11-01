@@ -20,14 +20,14 @@ Place all design journey images inside the "design-plan" folder and then link th
 ### Project (Milestone 1)
 > Which project will you add interactivity to enhance the site's functionality?
 
-Project (TODO: 1 or 2)
+Project 2
 
 
 ### Audience (Milestone 1)
 > Briefly explain your site's audience. (1-2 sentences)
 > Be specific and justify why this audience is a **cohesive** group.
 
-TODO: site's _cohesive_ audience
+The target audience comprises individuals in Ithaca during the festival, seeking details about the event's logistics, enjoyable activities, and essential information for their attendance. They would be people eager to gather all the necessary details to ensure a seamless and enjoyable festival experience, assuming they are in the vicinity during the festival dates.
 
 
 ### Audience's Goals (Milestone 1)
@@ -35,9 +35,9 @@ TODO: site's _cohesive_ audience
 > Simply list each goal. No need to include the "Design Ideas and Choices", etc.
 > You may adjust the goals if necessary.
 
-- TODO: goal 1
-- TODO: goal 2
-- TODO: ...
+- Goal 1: To identify logistics before attending the festival (transportation, dates)
+- Goal 2: To identify how to enjoy the festival (events, what it's about)
+- Goal 3: To find information that would be good to have in mind before visiting (precautions, warnings, prohibitions)
 
 
 ## Interactivity Design (Milestone 1)
@@ -47,7 +47,7 @@ TODO: site's _cohesive_ audience
 > Briefly explain each idea and provide a brief rationale for how the interactivity enhances the site's functionality for the audience. (1 sentence)
 > Note: You may find it easier to sketch for brainstorming. That's fine too. Do whatever you need to do to explore your ideas.
 
-- TODO: idea 1
+- 1.                                                                                                                 
 - TODO: idea 2
 - TODO: ...
 
@@ -57,7 +57,14 @@ TODO: site's _cohesive_ audience
 > Sketch at least two iterations of the modal and at least two iterations of the hamburger menu interactivity.
 > Annotate each sketch explaining what happens when a user takes an action. (e.g. When user clicks this, something else appears.)
 
-TODO: design sketches
+1. <Modal Sketch 1>
+    ![Modal Sketch 1](modal1.jpg)
+2. <Modal Sketch 2>
+    ![Modal Sketch 2](modal2.jpg)
+3. <Hamburger Sketch 1>
+    ![Hamburger Sketch 1](hamburger1.jpg)
+4. <Hamburger Sketch 2>
+    ![Hamburger Sketch 2](hamburger2.jpg)
 
 
 ### Final Interactivity Design Sketches (Milestone 1)

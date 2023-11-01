@@ -1,0 +1,450 @@
+html {
+    box-sizing: border-box;
+  }
+
+  * {
+    box-sizing: inherit;
+  }
+
+.everything {
+    display: flex;
+    flex-direction: row;
+    border-left: solid 4px #da473d;
+    border-right: solid 4px #da473d;
+    /* flex-wrap: wrap; */
+}
+
+.title {
+    display: block;
+    background-color: #da473d;
+    padding: 10px;
+    border-top: double 4px #f89a9a;
+    border-left: double 4px #f89a9a;
+    border-right: double 4px #f89a9a;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    font-family:cursive;
+}
+
+.title h1 {
+    color:#ffffff;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #da473d;
+    border-left: double 4px #f89a9a;
+    border-right: double 4px #f89a9a;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+}
+
+nav ul li {
+    list-style: none;
+    display: block;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    flex-shrink: 1;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    border: double 4px white;
+    border-radius: 15px;
+    background-color: #ec645b;
+    padding: 15px;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(228, 222, 126);
+}
+
+main {
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #fafbf4;
+    width: 80%;
+    max-width: 1440px;
+    height: auto;
+    flex-grow: 2;
+}
+
+.title {
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.intro-faq {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+    /* margin-right: 10px; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text {
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.texts {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.route {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.half1 {
+    display: block;
+    padding: 20px;
+    border: dashed 3px #f87c7c;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.half2 {
+    display: block;
+    padding: 20px;
+    border: dashed 3px #f87c7c;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #eaf1ac;
+    padding: 10px;
+    border-left: double 4px #b7c75e;
+    border-right: double 4px #b7c75e;
+    border-bottom: double 4px #b7c75e;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #2d5137;
+
+}
+
+aside {
+    display: flex;
+    flex-direction: column;;
+    padding: 15px;
+    margin: 10px;
+    /* width: 40%; */
+    min-width: 200px;
+    /* max-width: 200px; */
+    border: dashed 4px #cdaa8e;
+    border-radius: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    /* text-align: center; */
+}
+
+.images {
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    /* margin: 20px; */
+    padding: 20px;
+}
+
+.map img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sub-sub-title {
+    margin: 20px;
+}
+
+.titles {
+    padding: 20px;
+}
+
+.long-text {
+    margin: 20px;
+    width: 100%;
+    height: auto;
+    padding-right: 10px;
+}
+
+.route-name {
+    font-size: 18px;
+    font-weight: bold;
+    color:#2d5137;
+}
+
+.parking {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fde4e4;
+    flex-flow: row wrap;
+    padding: 20px;
+}
+
+
+.buildings {
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f8d2;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.grid {
+    display: block;
+}
+
+.sub-title {
+    color:#2d5137;
+}
+
+.vendors {
+    display: flex;
+    background-color:#ffdfcf;
+    justify-content: space-around;
+}
+
+.fresh {
+    display: flex;
+    background-color: #f1fbbc;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cider {
+    display: flex;
+    background-color: #fffddd;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.food-vendors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.faq {
+    color:#2d5137;
+    padding: 20px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.question {
+    color:#da473d;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sources {
+    text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: smaller;
+
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 100%;
+    }
+
+    .everything {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .buildings {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f2f8d2;
+        justify-content: space-around;
+    }
+
+    .parking {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #fde4e4;
+        flex-flow: row wrap;
+    }
+
+    .vendors {
+        display: flex;
+        flex-direction: column;
+        background-color:#ffdfcf;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .fresh {
+        display: flex;
+        flex-direction: column;
+        background-color: #f1fbbc;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .cider {
+        display: flex;
+        flex-direction: column;
+        order: revert;
+        background-color: #fffddd;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .food-vendors {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .texts {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        /* text-align: center; */
+    }
+
+    .sub-sub-title {
+        margin: 0;
+        text-align: center;
+    }
+
+    .half1 {
+        margin-right: 0;
+    }
+
+    .half2 {
+        margin-left: 0;
+    }
+
+    .intro-faq {
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+
+    nav {
+        justify-content: center;
+
+    }
+    nav ul {
+        flex-direction: column;
+        padding-top: 20px;
+        align-items: center;
+
+    }
+
+    nav ul li {
+        margin: 15px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        border: none;
+        background-color: #da473d;
+        font-size:larger;
+        padding: 0;
+    }
+
+    .titles {
+        padding: 0px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sub-title {
+        text-align: center;
+    }
+
+    .faq {
+        text-align: center;
+    }
+}
