@@ -10,11 +10,37 @@
 </head>
 
 <body>
+
+
+    <div id="modal" class="hidden">
+        <picture id="map-large">
+            <img src="images/apple-harvest-map-large.png" alt="map-large">
+        </picture>
+        <button id="close">
+            X
+        </button>
+    </div>
+
     <div class="title">
         <h1>Ithaca Apple Festival</h1>
     </div>
 
-    <nav>
+    <div id="navbar2" class="hidden">
+        <button id="menu">
+            ≡
+        </button>
+        <nav id="links" class="hidden">
+            <ul>
+                <li id="link1"><a href="index.html">🍎 About Us</a></li>
+                <li id="link2"><a href="directions.html">📍 Directions</a></li>
+                <li id="link3"><a href="thingstoenjoy.html">🍏 Things to Enjoy</a></li>
+                <li id="link4"><a href="faqs.html">❓ FAQs</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <nav id="navbar1">
         <ul>
             <li><a href="index.html">🍎 About Us</a></li>
             <li><a href="directions.html">📍 Directions</a></li>
@@ -36,18 +62,10 @@
                 <div class="images">
                     <!--Source: provided by instructor-->
                     <picture class="map">
-                        <img src="images/apple-harvest-map.png" alt="map">
+                        <img src="images/apple-harvest-map.svg" alt="map">
                     </picture>
                 </div>
-                
-                <div id="modal" class="hidden">
-                    <button id="close">
-                        X
-                    </button>
-                    <picture id="map-large">
-                        <img src="images/apple-harvest-map.svg" alt="map-large">
-                    </picture>
-                </div>
+
             </div>
 
                 <!--Source: provided by instructor-->

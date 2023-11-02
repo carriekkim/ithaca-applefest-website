@@ -24,6 +24,7 @@ html {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     font-family:cursive;
+    /* z-index: 0; */
 }
 
 .title h1 {
@@ -39,6 +40,7 @@ nav {
     justify-content: center;
     width: 100%;
     height: auto;
+    /* z-index: 0; */
 }
 
 nav ul {
@@ -124,6 +126,7 @@ main {
     padding: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+
 }
 
 .route {
@@ -187,6 +190,7 @@ aside {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 img {
@@ -311,6 +315,34 @@ img {
 
 .hidden {
     display: none !important;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(135, 63, 63, 0.5);
+    z-index: 9;
+    position:absolute;
+}
+
+#map-large {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+#map-large img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
 }
 
 @media (max-width: 900px) {
