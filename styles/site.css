@@ -309,6 +309,10 @@ img {
 
 }
 
+.hidden {
+    display: none !important;
+}
+
 @media (max-width: 900px) {
     html {
         font-size: 100%;
@@ -446,5 +450,9 @@ img {
 
     .faq {
         text-align: center;
+    }
+
+    #navbar1 {
+        display: none;
     }
 }

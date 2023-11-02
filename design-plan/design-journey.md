@@ -47,9 +47,9 @@ The target audience comprises individuals in Ithaca during the festival, seeking
 > Briefly explain each idea and provide a brief rationale for how the interactivity enhances the site's functionality for the audience. (1 sentence)
 > Note: You may find it easier to sketch for brainstorming. That's fine too. Do whatever you need to do to explore your ideas.
 
-- 1.                                                                                                                 
-- TODO: idea 2
-- TODO: ...
+- Enlarging the map image (This ensures better accessibility of overall location information, more visibility.)
+- Enlarging images of events and goods (This ensures better visibility of the details of the activities at the festival, providing the audience a more through idea of the festival.)
+- Magnified information of contact information and guidelines (This allows the user to feel more accessibility in reaching out to the staff to gain more information regarding the festival.)
 
 
 ### Interactivity Design Ideation (Milestone 1)
@@ -60,7 +60,7 @@ The target audience comprises individuals in Ithaca during the festival, seeking
 1. <Modal Sketch 1>
     ![Modal Sketch 1](modal1.jpg)
 2. <Modal Sketch 2>
-    ![Modal Sketch 2](modal2.jpg)
+    ![Modal Sketch 2](modal2.png)
 3. <Hamburger Sketch 1>
     ![Hamburger Sketch 1](hamburger1.jpg)
 4. <Hamburger Sketch 2>
@@ -76,11 +76,11 @@ The target audience comprises individuals in Ithaca during the festival, seeking
 
 **Modal design sketches:**
 
-TODO: final design sketch(es)
+![Modal Final Sketch](modal_final.png)
 
 **Hamburger drop-down navigation menu design sketches:**
 
-TODO: final design sketch(es)
+![Hamburger Final Sketch](hamburger_final.png)
 
 
 ### Interactivity Rationale (Milestone 1)
@@ -88,7 +88,7 @@ TODO: final design sketch(es)
 > Provide a brief rationale explaining how your proposed interactivity addresses the goals of your site's audience.
 > This should be about a paragraph. (2-4 sentences)
 
-TODO: design rationale
+The modal provides a larger image of the map, which isn't really visible in the thumbnail view. This means that the audience will be provided a layout that presents location information better, which will help them to enjoy the festival more effectively. The hamburger menu will provide more visibility on narrower screens so that the user can both navigate to designated pages easily and have a good view of the content on each page.
 
 
 ## Interactivity Implementation Plan (Milestone 1)
@@ -99,11 +99,11 @@ TODO: design rationale
 
 **Modal planning sketches:**
 
-TODO: planning sketch(es)
+![Modal Planning Sketch](modal_plan.png)
 
 **Hamburger drop-down navigation menu planning sketches:**
 
-TODO: planning sketch(es)
+![Hamburger Final Sketch](hamburger_plan.png)
 
 
 ### Interactivity Pseudocode Plan (Milestone 1)
@@ -115,13 +115,15 @@ TODO: planning sketch(es)
 Open the modal:
 
 ```
-TODO: pseudocode
+when #map-img is clicked:
+    remove .hidden from #modal
 ```
 
 Close the modal:
 
 ```
-TODO: pseudocode
+when #close is clicked:
+    add .hidden to #modal
 ```
 
 **Hamburger menu pseudocode:**
@@ -129,21 +131,28 @@ TODO: pseudocode
 Pseudocode to show/hide (toggle) the navigation menu (narrow screens):
 
 ```
-TODO: pseudocode
+when #menu is clicked (event):
+    if #link is .hidden:
+        remove .hidden from #link
+    else:
+        add .hidden to #link
 ```
 
 Pseudocode to hide the hamburger button and show the navigation bar when the window is resized too wide:
 
 ```
-TODO: pseudocode
+when #navbar2 is resized (min width: 600px):
+    add .hidden to #navbar2
+    remove .hidden from #navbar1
 ```
 
 Pseudocode to show the hamburger button and hide the navigation menu when the window is resized too narrow:
 
 ```
-TODO: pseudocode
+when #navbar1 is resized (max width: 600px):
+    add .hidden to #navbar1
+    remove .hidden from #navbar2
 ```
-
 
 ## Grading (Final Submission)
 
