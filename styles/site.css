@@ -6,6 +6,7 @@ html {
     box-sizing: inherit;
   }
 
+
 .everything {
     display: flex;
     flex-direction: row;
@@ -35,8 +36,8 @@ nav {
     display: flex;
     flex-direction: row;
     background-color: #da473d;
-    border-left: double 4px #f89a9a;
-    border-right: double 4px #f89a9a;
+    /* border-left: double 4px #f89a9a;
+    border-right: double 4px #f89a9a; */
     justify-content: center;
     width: 100%;
     height: auto;
@@ -190,7 +191,7 @@ aside {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    z-index: 0;
 }
 
 img {
@@ -317,33 +318,84 @@ img {
     display: none !important;
 }
 
+
 #modal {
+    display: flex;
     width: 100%;
     height: 100%;
-    background-color: rgba(135, 63, 63, 0.5);
-    z-index: 9;
-    position:absolute;
+    background-color: rgba(3, 3, 3, 0.5);
+    z-index: 9999;
+    position: fixed;
+    top:0;
+    left: 0;
+    align-items:center;
+    justify-content: center;
 }
 
 #map-large {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
+    z-index: 1;
+    align-items:center;
+    justify-content: center;
+    max-width: 1000px;
+}
 
+.map img:hover {
+    opacity:0.8;
 }
 
 #map-large img {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1200px;
+    align-items:center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    /* padding-right:20px; */
+    max-width: 1000px;
+}
+
+#close:hover {
+    background-color: #cdaa8e;
 }
 
 #close {
     position: absolute;
     top: 0;
     right: 0;
+    margin-right: 20px;
+    background-color: #dab8b6;
+}
+
+#menu {
+    font-size: 36px;
+    color: white;
+    border: none;
+    background-color:#da473d;
+    /* border:#2d5137; */
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
+
+#navbar1 {
+    border-left: double 4px #f89a9a;
+    border-right: double 4px #f89a9a;
 
 }
+
+#navbar2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #da473d;
+    /* justify-content: center; */
+    align-items: center;
+    /* padding: 10px; */
+    border-left: double 4px #f89a9a;
+    border-right: double 4px #f89a9a;
+}
+
 
 @media (max-width: 900px) {
     html {
@@ -420,7 +472,7 @@ img {
         margin: 20px;
         padding: 10px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+        z-index: 0;
     }
 
     .intro {
@@ -474,6 +526,7 @@ img {
         padding: 0px;
         justify-content: center;
         text-align: center;
+        z-index: 0;
     }
 
     .sub-title {
@@ -484,7 +537,7 @@ img {
         text-align: center;
     }
 
-    #navbar1 {
-        display: none;
+    #modal {
+
     }
 }

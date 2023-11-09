@@ -141,7 +141,7 @@ when #menu is clicked (event):
 Pseudocode to hide the hamburger button and show the navigation bar when the window is resized too wide:
 
 ```
-when #navbar2 is resized (min width: 600px):
+when #navbar2 is resized (min width: 900px):
     add .hidden to #navbar2
     remove .hidden from #navbar1
 ```
@@ -149,9 +149,21 @@ when #navbar2 is resized (min width: 600px):
 Pseudocode to show the hamburger button and hide the navigation menu when the window is resized too narrow:
 
 ```
-when #navbar1 is resized (max width: 600px):
+when #navbar1 is resized (max width: 900px):
     add .hidden to #navbar1
     remove .hidden from #navbar2
+```
+
+Pseudocode to show/hide the hamburger button and show/hide the navigation menu when page loads
+
+```
+when window is narrow (< 900px):
+    add .hidden to #navbar1
+    remove .hidden from #navbar2
+
+when window is wide (> 900px):
+    add .hidden to #navbar2
+    remove .hidden from #navbar1
 ```
 
 ## Grading (Final Submission)
@@ -160,7 +172,7 @@ when #navbar1 is resized (max width: 600px):
 > Explain how your design effectively uses affordances, visibility, feedback, and familiarity.
 > Write a paragraph (3-5 sentences)
 
-TODO: interactivity rationale
+The design implements visual affordances that signal the user where to click in order to find the information they need for Apple Fest. It also provides visual feedback of hovering effects in order to signal to the user that they are successfully interacting with the website. It implements familiar web designing practices in regards of the navigation bar, the hamburger menu, and the modal so that the user can follow familiar processes to interact with the website. The interactivity of the website is also responsive so that the user can easily navigate through the website regardless of what device they are using.
 
 
 ### Tell Us What to Grade (Final Submission)
@@ -169,28 +181,31 @@ TODO: interactivity rationale
 > Tell us where (what pages) we can find your interactivity and how to use it.
 > **We will only grade what you list here;** if it's not listed, we won't grade it.
 
-TODO: what should we grade
+About Page - navigation bar and hamburger menu
+Directions Page - navigation bar and hamburger menu, modal (click on map-image)
+Things to Enjoy Page - navigation bar and hamburger menu
+FAQs Page - navigation bar and hamburger menu
 
 
 ### Collaborators (Final Submission)
 > List any persons you collaborated with on this project.
 
-TODO: list your collaborators
+This is solely my work.
 
 
 ### Reference Resources (Final Submission)
 > Please cite any external resources you referenced in the creation of your project.
 > (i.e. W3Schools, StackOverflow, Mozilla, etc.)
 
-TODO: list reference resources
+Mozilla
 
 
 ### Self-Reflection (Final Submission)
 > This was the first project in this class where you coded some JavaScript. What did you learn from this experience?
 
-TODO: self-reflection
+I learned how ids and classes are different and how they are utilized in JavaScript. I also learned how to successfully implement basic interactivity features in the website, and how to coordinate their visuals so that they are aesthetically and functionally pleasing and effective.
 
 
 > Take some time here to reflect on how much you've learned since you started this class. It's often easy to ignore our own progress. Take a moment and think about your accomplishments in this class. Hopefully you'll recognize that you've accomplished a lot and that you should be very proud of those accomplishments!
 
-TODO: self-reflection
+Compared to when I started in this course, it's nice to see that I can implement an entire website out of scratch, even with interactivity features that I usually see on most websites that are currently available. 
